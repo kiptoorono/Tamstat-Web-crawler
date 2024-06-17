@@ -53,6 +53,7 @@ class Data_downloader:
                         print(f'failed to download from{new_url} statuscode:{response.status_codes}')
                 except Exception as e:
                     print(f'Exception Occured while downloading {new_url}:{e}')
+    #method to initiate download
     def start_downloading(self):
         self.file_downloader(self.directory_url,self.download_path)
     
